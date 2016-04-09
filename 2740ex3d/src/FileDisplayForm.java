@@ -101,9 +101,13 @@ public class FileDisplayForm extends JFrame {
 		fileContentsLabel.setText(fd.displayHead());
 	}
 	protected void do_displayContentsButton_actionPerformed(ActionEvent e) {
+		FileDisplay fd = new FileDisplay(fileNameTextField.getText());	
+		fileContentsLabel.setText(fd.displayContents());
 		
 	}
 	protected void do_displayLineNumButton_actionPerformed(ActionEvent e) {
+		FileDisplay fd = new FileDisplay(fileNameTextField.getText());	
+		fileContentsLabel.setText(fd.displayWithLineNumbers());
 		
 	}
 }

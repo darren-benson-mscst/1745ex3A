@@ -27,15 +27,17 @@ public class FileDisplay {
 			    Scanner inputFile = new Scanner(file);
 
 			    // Read 5 lines from the file or until no more are left.
-	            String textLine = inputFile.nextLine();
-	            str.append(textLine);
-	            str.append("<br>");
-	            
-	            textLine = inputFile.nextLine();
-	            str.append(textLine);
-	            str.append("<br>");
+			    int counter = 0;
+			    while (inputFile.hasNext() && counter < 5)
+			    {
+			    	
+			    	String textLine = inputFile.nextLine();
+				    str.append(textLine);
+		            str.append("<br>");		            
+		            counter++;
 
-		        str.append("</html>");
+			    }
+			    
 			    // Close the file.
 			    inputFile.close();
 			}
@@ -49,7 +51,32 @@ public class FileDisplay {
 		StringBuilder str = new StringBuilder(
 				"<html>DisplayContents(): complete file contents:<br>");
 		// Open file, read all rows, append strings to str, close file
-		str.append("</html>");
+		try {
+	    	File file = new File(this.fileName);
+			if (!file.exists()) {
+				// Display an error message.
+				str.append("The file " + this.fileName +
+							" does not exist.");
+			}
+			else {
+				
+			    Scanner inputFile = new Scanner(file);
+
+			    while (inputFile.hasNext())
+			    {
+			    	
+			    	String textLine = inputFile.nextLine();
+				    str.append(textLine);
+		            str.append("<br>");		            
+		           
+			    }
+			    
+			    str.append("</html>");
+			    
+			    inputFile.close();
+			}
+		}
+			 catch (IOException e) {}
 		return str.toString();
 	}
 	
@@ -57,8 +84,35 @@ public class FileDisplay {
 		StringBuilder str = new StringBuilder(
 				"<html>DisplayWithLineNumbers(): contents with line numbers:<br>");
 		// Open file, read all rows, append strings to str, close file
-		str.append("</html>");
-		return str.toString();			
+		try {
+	    	File file = new File(this.fileName);
+			if (!file.exists()) {
+				// Display an error message.
+				str.append("The file " + this.fileName +
+							" does not exist.");
+			}
+			else {
+				
+			    Scanner inputFile = new Scanner(file);
+			    int lineNumber = 1;
+
+			    while (inputFile.hasNext())
+			    {
+			    	
+			    	String textLine = inputFile.nextLine();
+				    str.append(lineNumber + ": " + textLine);
+		            str.append("<br>");		            
+		            lineNumber++;
+			    }
+			    
+			    str.append("</html>");
+			    
+			    inputFile.close();
+			}
+		}
+			 catch (IOException e) {}
+	
+			 return str.toString();			
 	}
 
 }
