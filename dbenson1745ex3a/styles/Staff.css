@@ -1,0 +1,137 @@
+﻿body {
+    width: 100%;
+    position : relative;
+    max-width : 1440px;
+    min-width : 600px;
+    margin: 0.25em auto 0.25em auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article, aside, figcaption, figure, footer, header, nav, section
+{
+    
+    display: block;
+}
+
+article h3 {
+    padding-top: 3em;
+}
+
+article p {
+    float: left;
+    
+}
+
+article {
+    width : 90%;
+    float:left;
+    clear: left;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+article p {
+    margin-bottom :0.75em;
+    float : left;
+  
+    color: #404040;
+}
+article h3, h4, h5, h6 {
+    color: #006060;
+}
+
+/*article img {
+    float: left;
+    clear : left;
+    width: 50%;
+    height: 35%;
+    border : 1px solid;
+}*/
+
+article img.schedule {
+    float : left;
+    
+}
+
+div.Ryan {
+    margin-left : 1em;
+}
+
+div.Ryan img {
+    border : 3px solid;
+}
+
+div.Holly {
+    margin-left : 1em;
+}
+
+div.Holly img {
+    border-style: solid;
+    border-color: inherit;
+    border-width: 3px;
+    width: 270px;
+}
+
+header {
+    width: 100%;
+    border: thin solid #006060;
+    background-color: white;
+    background-image: url('../images/sky.jpg') ;
+    background-repeat :round;   
+    padding: 0.25em;
+    text-align: center;
+    text-shadow : 2px 2px #808080;
+    font-style: italic;
+    font-family: 'Times New Roman';
+    color: black;
+    height: 6.8em;
+    overflow: hidden;
+    
+}
+header img {
+    float : left;
+    height : 100px;
+}
+footer {
+    clear: both;
+    float: left;
+    border: thin solid #006060;
+    width : 100%;
+    text-align : center;
+    background-color: skyblue;
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
+    color: black;
+}
+footer {
+    font-size: x-small;
+}
+
+section {
+    float: left;
+    width :69%;
+}
+
+aside {
+    
+    width : 30%;
+    min-width : 200px;
+    border: 1px solid;
+    border-radius: 5px;  
+    float : left;
+    margin-top : 12em;
+}
+
+aside img {
+    width: 100%; 
+}
+
+aside h3 {
+    padding-left : 1em;
+}
+
+aside p {
+    clear: right;
+    font-style : italic;
+    padding: 0em 1em 0em 1em;
+}

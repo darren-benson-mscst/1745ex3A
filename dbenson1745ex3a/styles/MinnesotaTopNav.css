@@ -1,0 +1,90 @@
+﻿nav {
+    position: absolute;
+    top: 8.0em;
+    left: .25em;
+    height: 100%;
+    width: 35em;
+    z-index: 10;
+    
+    
+    
+}
+#menu1 {
+    overflow: hidden; 
+    width: 8em; height: 3em; 
+    float: left;
+}
+#menu1:hover {
+    height: 21em;
+}
+#menu1 {
+    -webkit-transition: 200ms ease-in;
+    -moz-transition: 200ms ease-in;
+    -o-transition: 200ms ease-in;
+    -ms-transition: 200ms ease-in;
+    transition: 200ms ease-in;
+    margin-top: 7px;
+}
+#menu2 {
+    overflow: hidden; 
+    width: 8em; height: 3em; 
+    float: left;
+}
+#menu2:hover {
+    height: 21em;
+}
+#menu2 {
+    -webkit-transition: 200ms ease-in;
+    -moz-transition: 200ms ease-in;
+    -o-transition: 200ms ease-in;
+    -ms-transition: 200ms ease-in;
+    transition: 200ms ease-in;
+    margin-top: 7px;
+}
+ul.topnav {
+	list-style: none;
+	padding: 0 0.25em;	
+	margin: 0;
+	float: left;
+	background: #006060;
+	font-size: 1.2em;
+    height: 481px;
+}
+ul.topnav li {
+    margin: 0;
+    position: relative; /*--Declare X and Y axis base--*/
+    list-style: none;
+    top: 6px;
+    left: 4px;
+    height: 65px;
+    width: 115px;
+}
+ul.topnav li span {
+    padding: .5em 1.5em .5em 1.5em;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+    float: left;
+    list-style: none;
+    margin-left: 0px;
+}
+ul.topnav li a {
+    padding: .5em 1.5em .5em 1.5em;
+    color: #DDEEEE;
+    display: block;
+    text-decoration: none;
+    float: left;
+    list-style: none;
+}
+ul.topnav li a:hover{
+    background: #DDEEEE;
+    color: #006060;
+}
+ul.topnav li a {
+    -webkit-transition: 200ms linear;
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    -ms-transition: 200ms linear;
+    transition: 200ms linear;
+}
+
